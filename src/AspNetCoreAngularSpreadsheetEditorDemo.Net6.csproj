@@ -9,7 +9,7 @@
 		<SpaProxyLaunchCommand>npm start</SpaProxyLaunchCommand>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<EnableDefaultItems>false</EnableDefaultItems>
-		<Version>12.2.7.1</Version>
+		<Version>12.2.8.1</Version>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -77,6 +77,7 @@
 		<Content Include="wwwroot\favicon.ico" />
 		<Content Include="wwwroot\Images\fileUploadProgress.gif" />
 		<Content Include="wwwroot\Images\VintaSoftLogo.png" />
+		<Content Include="wwwroot\wwwroot\Resources\ChartSource.xlsx" />
 		<None Include=".gitignore" />
 		<None Include="wwwroot\UploadedImageFiles\SalesReport.xlsx" />
 		<Folder Include="wwwroot\VintasoftCache\" />

@@ -61,6 +61,11 @@ export class SpreadsheetEditorDemoComponent {
         let spreadsheetEditor: Vintasoft.Imaging.Office.UI.WebSpreadsheetEditorControlJS =
           this._spreadsheetDocumentEditorControl.get_SpreadsheetEditorControl();
         spreadsheetEditor.set_InteractionPointRadius(8);
+
+        // hide main menu header in fullscreen mode
+        this._spreadsheetDocumentEditorControl.set_ShowMainMenuHeaderInFullscreenMode(false);
+        // hide footer panel in fullscreen mode
+        this._spreadsheetDocumentEditorControl.set_ShowFooterPanelInFullscreenMode(false);
       }
 
       // subscribe to the "warningOccured" event of spreadsheet document editor control
@@ -79,6 +84,11 @@ export class SpreadsheetEditorDemoComponent {
       Vintasoft.Shared.subscribeToEvent(this._spreadsheetDocumentEditorControl, "textSearchFinished", this.__spreadsheetDocumentEditorControl_textSearchFinished);
       // subscribe to the newWorkbookCreating event of spreadsheet document editor control
       Vintasoft.Shared.subscribeToEvent(this._spreadsheetDocumentEditorControl, "newWorkbookCreating", this.__spreadsheetDocumentEditorControl_newWorkbookCreating);
+
+      // subscribe to the "resize" event of window
+      window.onresize = this.__window_resize;
+      // change the visibility of demo header
+      this.__changeDemoHeaderVisibility(window.innerHeight < 500);
 
       document.oncontextmenu = function () {
         // specify that context menu of web browser should not be shown
@@ -139,7 +149,7 @@ export class SpreadsheetEditorDemoComponent {
   }
 
   __spreadsheetDocumentEditorControl_newWorkbookCreating(event: any, eventArgs: any) {
-      eventArgs.createWorkbook = confirm(eventArgs.message);
+    eventArgs.createWorkbook = confirm(eventArgs.message);
   }
 
   // === Open default XLSX document ===
@@ -219,6 +229,31 @@ export class SpreadsheetEditorDemoComponent {
     return toMatch.some((toMatchItem) => {
       return navigator.userAgent.match(toMatchItem);
     });
+  }
+
+  /**
+   Window is resized.
+  */
+  __window_resize() {
+    _spreadsheetEditorDemoComponent.__changeDemoHeaderVisibility(window.innerHeight < 500)
+  }
+
+  /**
+   Changes the visibility of demo header.
+  */
+  __changeDemoHeaderVisibility(hide: boolean) {
+    var displayStyle = "block";
+    var heightStyle = (window.innerHeight - 60) + "px";
+    if (hide) {
+      displayStyle = "none";
+      heightStyle = window.innerHeight + "px"
+    }
+
+    let demoHeader: HTMLElement = document.getElementById("demoHeader") as HTMLElement;
+    demoHeader.style.display = displayStyle;
+
+    let spreadsheetDocumentEditorControlContainer: HTMLElement = document.getElementById("spreadsheetDocumentEditorControlContainer") as HTMLElement;
+    spreadsheetDocumentEditorControlContainer.style.height = heightStyle;
   }
 
 }
