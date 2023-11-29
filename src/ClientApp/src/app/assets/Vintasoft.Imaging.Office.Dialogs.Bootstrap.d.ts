@@ -1,10 +1,17 @@
+﻿// Copyright 2014-2023 VintaSoft Ltd. All rights reserved.
+// This software is protected by International copyright laws.
+// Any copying, duplication, deployment, redistribution, modification or other
+// disposition hereof is STRICTLY PROHIBITED without an express written license
+// granted by VintaSoft Ltd. This notice may not be removed or otherwise
+// altered under any circumstances.
+// This code may NOT be used apart of the VintaSoft product.
 ﻿// NAMESPACE
 declare module Vintasoft.Imaging.Office.UI.Dialogs {
 
   // ===== CLASSES =====
 
   /**
-   * A web UI dialog that allows to rename worksheet in the spreadsheet editor.
+   * A web UI dialog (based on the Bootstrap) that allows to rename worksheet in the spreadsheet editor.
    */
   class WebUiRenameWorksheetDialogJS extends Vintasoft.Imaging.UI.Dialogs.WebUiDialogJS {
 
@@ -26,7 +33,7 @@ declare module Vintasoft.Imaging.Office.UI.Dialogs {
   }
 
   /**
-   * A web UI dialog that allows to reposition the worksheet in the spreadsheet editor.
+   * A web UI dialog (based on the Bootstrap) that allows to reposition the worksheet in the spreadsheet editor.
    */
   class WebUiMoveWorksheetDialogJS extends Vintasoft.Imaging.UI.Dialogs.WebUiDialogJS {
 
@@ -48,7 +55,7 @@ declare module Vintasoft.Imaging.Office.UI.Dialogs {
   }
 
   /**
-   * A web UI dialog that allows to find text in worksheet document.
+   * A web UI dialog (based on the Bootstrap) that allows to find text in worksheet document.
    */
   class WebUiFindTextDialogJS extends Vintasoft.Imaging.UI.Dialogs.WebUiDialogJS {
 
@@ -63,7 +70,7 @@ declare module Vintasoft.Imaging.Office.UI.Dialogs {
   }
 
   /**
-   * A web UI dialog that allows to select the cell function.
+   * A web UI dialog (based on the Bootstrap) that allows to select the cell function.
    */
   class WebUiSelectFunctionDialogJS extends Vintasoft.Imaging.UI.Dialogs.WebUiDialogJS {
 
@@ -78,7 +85,7 @@ declare module Vintasoft.Imaging.Office.UI.Dialogs {
   }
 
   /**
-   * A web UI dialog that allows to insert new comment.
+   * A web UI dialog (based on the Bootstrap) that allows to insert new comment.
    */
   class WebUiInsertCommentDialogJS extends Vintasoft.Imaging.UI.Dialogs.WebUiDialogJS {
 
@@ -100,7 +107,7 @@ declare module Vintasoft.Imaging.Office.UI.Dialogs {
   }
 
   /**
-   * A web UI dialog that allows to edit an existing comment.
+   * A web UI dialog (based on the Bootstrap) that allows to edit an existing comment.
    */
   class WebUiEditCommentDialogJS extends Vintasoft.Imaging.UI.Dialogs.WebUiDialogJS {
 
@@ -122,7 +129,7 @@ declare module Vintasoft.Imaging.Office.UI.Dialogs {
   }
 
   /**
-   * A web UI dialog that allows to edit the number format for cell value.
+   * A web UI dialog (based on the Bootstrap) that allows to edit the number format for cell value.
    */
   class WebUiCellNumberFormatDialogJS extends Vintasoft.Imaging.UI.Dialogs.WebUiDialogJS {
 
@@ -144,7 +151,7 @@ declare module Vintasoft.Imaging.Office.UI.Dialogs {
   }
 
   /**
-   * A web UI dialog that allows to insert chart in the spreadsheet editor.
+   * A web UI dialog (based on the Bootstrap) that allows to insert chart in the spreadsheet editor.
    */
   class WebUiInsertChartDialogJS extends Vintasoft.Imaging.UI.Dialogs.WebUiDialogJS {
 
@@ -172,7 +179,7 @@ declare module Vintasoft.Imaging.Office.UI.Dialogs {
   }
 
   /**
-   * A web UI dialog that allows to edit the chart properties in the spreadsheet editor.
+   * A web UI dialog (based on the Bootstrap) that allows to edit the chart properties in the spreadsheet editor.
    */
   class WebUiEditChartPropertiesDialogJS extends Vintasoft.Imaging.UI.Dialogs.WebUiDialogJS {
 
@@ -180,6 +187,28 @@ declare module Vintasoft.Imaging.Office.UI.Dialogs {
 
     /**
      * Initializes a new instance of the [see= "WebUiEditChartPropertiesDialogJS"] class.
+     * @param spreadsheetEditorControl The spreadsheet editor control.
+     */
+    constructor(spreadsheetEditorControl: Vintasoft.Imaging.Office.UI.WebSpreadsheetEditorControlJS);
+
+    // METHODS
+
+    /**
+     * Shows the dialog.
+     */
+    show(): void;
+
+  }
+
+  /**
+   * A web UI dialog (based on the Bootstrap) that allows to add or edit hyperlink in cell.
+   */
+  class WebUiEditHyperlinkDialogJS extends Vintasoft.Imaging.UI.Dialogs.WebUiDialogJS {
+
+    // CONTSRUCTORS
+
+    /**
+     * Initializes a new instance of the [see= "WebUiEditHyperlinkDialogJS"] class.
      * @param spreadsheetEditorControl The spreadsheet editor control.
      */
     constructor(spreadsheetEditorControl: Vintasoft.Imaging.Office.UI.WebSpreadsheetEditorControlJS);

@@ -53,9 +53,9 @@ The project demonstrates how to view and edit XLSX document in ASP.NET Core with
    Vintasoft.Imaging.ImagingGlobalSettings.Register("REG_USER", "REG_EMAIL", "EXPIRATION_DATE", "REG_CODE");
    ```
 
-3. Build the project ("AspNetCoreAngularSpreadsheetEditorDemo.Net7.csproj" file) in Visual Studio or using .NET CLI:
+3. Build the project ("AspNetCoreAngularSpreadsheetEditorDemo.Net8.csproj" file) in Visual Studio or using .NET CLI:
    ```
-   dotnet build AspNetCoreAngularSpreadsheetEditorDemo.Net7.csproj
+   dotnet build AspNetCoreAngularSpreadsheetEditorDemo.Net8.csproj
    ```
 
 4. Run compiled application and try to view and edit XLSX document.

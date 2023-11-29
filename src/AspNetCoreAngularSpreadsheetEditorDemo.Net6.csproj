@@ -9,7 +9,7 @@
 		<SpaProxyLaunchCommand>npm start</SpaProxyLaunchCommand>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<EnableDefaultItems>false</EnableDefaultItems>
-		<Version>12.2.12.1</Version>
+		<Version>12.3.0.1</Version>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -47,21 +47,21 @@
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.AspNetCore.SpaProxy" Version="6.0.0" />
-		<PackageReference Include="SkiaSharp" Version="2.88.5" />
+		<PackageReference Include="SkiaSharp" Version="2.88.6" />
 		<PackageReference Include="System.IO.Packaging" Version="6.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
-    <PackageReference Include="Vintasoft.Shared" Version="4.0.0.3" />
-    <PackageReference Include="Vintasoft.Imaging" Version="12.2.7.1" />
-    <PackageReference Include="Vintasoft.Imaging.Drawing.SkiaSharp" Version="12.2.7.1" />
-    <PackageReference Include="Vintasoft.Imaging.Office.OpenXml" Version="4.2.7.1" />
-    <PackageReference Include="Vintasoft.Imaging.Pdf" Version="9.2.7.1" />
-    <PackageReference Include="Vintasoft.Shared.Web" Version="4.0.0.3" />
-    <PackageReference Include="Vintasoft.Imaging.Web.Services" Version="12.2.7.1" />
-    <PackageReference Include="Vintasoft.Imaging.AspNetCore.ApiControllers" Version="12.2.7.1" />
-    <PackageReference Include="Vintasoft.Imaging.Office.Web.Services" Version="4.2.7.1" />
-    <PackageReference Include="Vintasoft.Imaging.Office.AspNetCore.ApiControllers" Version="4.2.7.1" />
+    <PackageReference Include="Vintasoft.Shared" Version="4.1.0.1" />
+    <PackageReference Include="Vintasoft.Imaging" Version="12.3.0.1" />
+    <PackageReference Include="Vintasoft.Imaging.Drawing.SkiaSharp" Version="12.3.0.1" />
+    <PackageReference Include="Vintasoft.Imaging.Office.OpenXml" Version="4.3.0.1" />
+    <PackageReference Include="Vintasoft.Imaging.Pdf" Version="9.3.0.1" />
+    <PackageReference Include="Vintasoft.Shared.Web" Version="4.1.0.1" />
+    <PackageReference Include="Vintasoft.Imaging.Web.Services" Version="12.3.0.1" />
+    <PackageReference Include="Vintasoft.Imaging.AspNetCore.ApiControllers" Version="12.3.0.1" />
+    <PackageReference Include="Vintasoft.Imaging.Office.Web.Services" Version="4.3.0.1" />
+    <PackageReference Include="Vintasoft.Imaging.Office.AspNetCore.ApiControllers" Version="4.3.0.1" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -77,7 +77,7 @@
 		<Content Include="wwwroot\favicon.ico" />
 		<Content Include="wwwroot\Images\fileUploadProgress.gif" />
 		<Content Include="wwwroot\Images\VintaSoftLogo.png" />
-		<Content Include="wwwroot\wwwroot\Resources\ChartSource.xlsx" />
+		<Content Include="wwwroot\Resources\ChartSource.xlsx" />
 		<None Include=".gitignore" />
 		<None Include="wwwroot\UploadedImageFiles\SalesReport.xlsx" />
 		<Folder Include="wwwroot\VintasoftCache\" />
