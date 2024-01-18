@@ -1,4 +1,4 @@
-﻿// Copyright 2014-2023 VintaSoft Ltd. All rights reserved.
+﻿// Copyright 2014-2024 VintaSoft Ltd. All rights reserved.
 // This software is protected by International copyright laws.
 // Any copying, duplication, deployment, redistribution, modification or other
 // disposition hereof is STRICTLY PROHIBITED without an express written license
@@ -209,6 +209,73 @@ declare module Vintasoft.Imaging.Office.UI.Dialogs {
 
     /**
      * Initializes a new instance of the [see= "WebUiEditHyperlinkDialogJS"] class.
+     * @param spreadsheetEditorControl The spreadsheet editor control.
+     */
+    constructor(spreadsheetEditorControl: Vintasoft.Imaging.Office.UI.WebSpreadsheetEditorControlJS);
+
+    // METHODS
+
+    /**
+     * Shows the dialog.
+     */
+    show(): void;
+
+  }
+
+  /**
+   * A web UI dialog (based on the Bootstrap) that allows to select a defined name from available defined names in the spreadsheet editor.
+   */
+  class WebUiSelectDefinedNameDialogJS extends Vintasoft.Imaging.UI.Dialogs.WebUiDialogJS {
+
+    // CONTSRUCTORS
+
+    /**
+     * Initializes a new instance of the [see= "WebUiSelectDefinedNameDialogJS"] class.
+     * @param spreadsheetEditorControl The spreadsheet editor control.
+     */
+    constructor(spreadsheetEditorControl: Vintasoft.Imaging.Office.UI.WebSpreadsheetEditorControlJS);
+
+    // METHODS
+
+    /**
+     * Shows the dialog.
+     */
+    show(): void;
+
+  }
+
+  /**
+   * A web UI dialog (based on the Bootstrap) that allows to edit a defined name in the spreadsheet editor.
+   */
+  class WebUiEditDefinedNameDialogJS extends Vintasoft.Imaging.UI.Dialogs.WebUiDialogJS {
+
+    // CONTSRUCTORS
+
+    /**
+     * Initializes a new instance of the [see= "WebUiEditDefinedNameDialogJS"] class.
+     * @param spreadsheetEditorControl The spreadsheet editor control.
+     */
+    constructor(spreadsheetEditorControl: Vintasoft.Imaging.Office.UI.WebSpreadsheetEditorControlJS);
+
+    // METHODS
+
+    /**
+     * Shows the dialog.
+     * @param definedName Name of editing Defined Name. If Null - create new Defined Name.
+     */
+    show(definedName: string): void;
+
+  }
+
+  /**
+   * A web UI dialog (based on the Bootstrap) that allows to manage (add, edit, delete) the defined names in the spreadsheet editor.
+   */
+  class WebUiDefinedNameManagerDialogJS extends Vintasoft.Imaging.UI.Dialogs.WebUiDialogJS {
+
+    // CONTSRUCTORS
+
+    /**
+     * Initializes a new instance of the [see= "WebUiDefinedNameManagerDialogJS"] class.
      * @param spreadsheetEditorControl The spreadsheet editor control.
      */
     constructor(spreadsheetEditorControl: Vintasoft.Imaging.Office.UI.WebSpreadsheetEditorControlJS);
