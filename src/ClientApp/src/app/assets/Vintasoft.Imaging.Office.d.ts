@@ -45,16 +45,7 @@ declare module Vintasoft.Imaging.Office.UI {
   // ===== ENUMS =====
 
   /**
-   * Specifies available types, which define how an XLSX page must be laid out.
-   */
-  class WebXlsxPageLayoutSettingsTypeEnumJS extends Vintasoft.Shared.WebFlagsEnumItemBaseJS {
-
-    constructor(value: string);
-
-  }
-
-  /**
-   * Specifies available modes, which define how user can interact in the <see cref="SpreadsheetVisualEditor"/>.
+   * Specifies available modes, which define how user can interact in the spreadsheet visual editor.
    */
   class WebSpreadsheetVisualEditorInteractionModeEnumJS extends Vintasoft.Shared.WebEnumItemBaseJS {
 
@@ -862,13 +853,13 @@ declare module Vintasoft.Imaging.Office.UI {
     /**
      * Gets the value, which defines how an XLSX page must be laid out.
      */
-    get_XlsxPageLayoutSettingsType(): Vintasoft.Imaging.Office.UI.WebXlsxPageLayoutSettingsTypeEnumJS;
+    get_XlsxPageLayoutSettingsType(): Vintasoft.Shared.WebXlsxPageLayoutSettingsTypeEnumJS;
 
     /**
      * Sets the value, which defines how an XLSX page must be laid out.
      * @param value [see="WebXlsxPageLayoutSettingsTypeEnumJS"] object, which defines how an XLSX page must be laid out. The default value is "UseWorksheetWidth".
      */
-    set_XlsxPageLayoutSettingsType(value: Vintasoft.Imaging.Office.UI.WebXlsxPageLayoutSettingsTypeEnumJS): void;
+    set_XlsxPageLayoutSettingsType(value: Vintasoft.Shared.WebXlsxPageLayoutSettingsTypeEnumJS): void;
 
     /**
      * Gets a value indicating whether main menu header is visible.
@@ -1001,7 +992,7 @@ declare module Vintasoft.Imaging.Office.UI {
      * @param successFunc Function that will be executed if request is executed successfully.
      * @param errorFunc Function that will be executed if request is failed.
      */
-    exportXlsxToPdf(xlsxPageLayoutSettingsType: Vintasoft.Imaging.Office.UI.WebXlsxPageLayoutSettingsTypeEnumJS, successFunc: Function, errorFunc: Function): void;
+    exportXlsxToPdf(xlsxPageLayoutSettingsType: Vintasoft.Shared.WebXlsxPageLayoutSettingsTypeEnumJS, successFunc: Function, errorFunc: Function): void;
 
     /**
      * Adds new worksheet to the spreadsheet document and updates the UI of this control. New worksheet is added after the focused worksheet.
