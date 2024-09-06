@@ -67,6 +67,13 @@ declare module Vintasoft.Imaging.Office.UI.Dialogs {
      */
     constructor(spreadsheetEditorControl: Vintasoft.Imaging.Office.UI.WebSpreadsheetEditorControlJS);
 
+    // METHODS
+
+    /**
+     * Shows the dialog.
+     */
+    show(): void;
+
   }
 
   /**
@@ -81,6 +88,13 @@ declare module Vintasoft.Imaging.Office.UI.Dialogs {
      * @param spreadsheetEditorControl The spreadsheet editor control.
      */
     constructor(spreadsheetEditorControl: Vintasoft.Imaging.Office.UI.WebSpreadsheetEditorControlJS);
+
+    // METHODS
+
+    /**
+     * Shows the dialog.
+     */
+    show(): void;
 
   }
 
@@ -98,6 +112,11 @@ declare module Vintasoft.Imaging.Office.UI.Dialogs {
     constructor(spreadsheetEditorControl: Vintasoft.Imaging.Office.UI.WebSpreadsheetEditorControlJS);
 
     // METHODS
+
+    /**
+     * Shows the dialog.
+     */
+    show(): void;
 
     /**
      * Clear comment params from panel textboxes.
@@ -120,6 +139,11 @@ declare module Vintasoft.Imaging.Office.UI.Dialogs {
     constructor(spreadsheetEditorControl: Vintasoft.Imaging.Office.UI.WebSpreadsheetEditorControlJS);
 
     // METHODS
+
+    /**
+     * Shows the dialog.
+     */
+    show(): void;
 
     /**
      * Fills the fields of this dialog using parameters of focused comment.

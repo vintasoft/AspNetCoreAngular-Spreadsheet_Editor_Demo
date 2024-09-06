@@ -316,13 +316,13 @@ declare module Vintasoft.Imaging.Office.UI {
     /**
      * Gets the maximum number of undo actions.
      */
-    get_MaxActions(): number;
+    get_UndoMaxActions(): number;
 
     /**
      * Sets the maximum number of undo actions.
      * @param value Maximum number of undo actions. The default value is 25.
      */
-    set_MaxActions(value: number): void;
+    set_UndoMaxActions(value: number): void;
 
     // METHODS
 
@@ -429,12 +429,12 @@ declare module Vintasoft.Imaging.Office.UI {
      * Inserts the formula in focused cell.
      * @param formula The formula.
      */
-    insertFormulaInFocusedCell(formula: object): void;
+    insertFormulaInFocusedCell(formula: string): void;
 
     /**
      * Clears contents (value and formula) of selected cells.
      */
-    clearCellsContent(): void;
+    clearCellsContents(): void;
 
     /**
      * Clears format (style) of selected cells.
@@ -471,6 +471,11 @@ declare module Vintasoft.Imaging.Office.UI {
      * Removes the focused drawing.
      */
     removeDrawing(): void;
+
+    /**
+     * Removes hyperlinks from focused sheet drawing or selected cells.
+     */
+    removeHyperlinks(): void;
 
     /**
      * Removes selected cells and shifts columns to the left.
@@ -842,13 +847,13 @@ declare module Vintasoft.Imaging.Office.UI {
     /**
      * Gets the maximum number of undo actions.
      */
-    get_MaxActions(): number;
+    get_UndoMaxActions(): number;
 
     /**
      * Sets the maximum number of undo actions.
      * @param value Maximum number of undo actions. The default value is 25.
      */
-    set_MaxActions(value: number): void;
+    set_UndoMaxActions(value: number): void;
 
     /**
      * Gets the value, which defines how an XLSX page must be laid out.
@@ -1067,7 +1072,7 @@ declare module Vintasoft.Imaging.Office.UI {
     /**
      * Switches the control's view to the full screen mode.
      */
-    swithToFullscreenMode(): void;
+    switchToFullscreenMode(): void;
 
     /**
      * Exits the control's view from the full screen mode.
