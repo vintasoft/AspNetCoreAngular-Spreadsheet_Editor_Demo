@@ -19,9 +19,8 @@ declare module Vintasoft.Imaging.Office.UI.Dialogs {
 
     /**
      * Initializes a new instance of the [see= "WebUiRenameWorksheetDialogJS"] class.
-     * @param spreadsheetEditorControl The spreadsheet editor control.
      */
-    constructor(spreadsheetEditorControl: Vintasoft.Imaging.Office.UI.WebSpreadsheetEditorControlJS);
+    constructor();
 
     // METHODS
 
@@ -41,9 +40,8 @@ declare module Vintasoft.Imaging.Office.UI.Dialogs {
 
     /**
      * Initializes a new instance of the [see= "WebUiMoveWorksheetDialogJS"] class.
-     * @param spreadsheetEditorControl The spreadsheet editor control.
      */
-    constructor(spreadsheetEditorControl: Vintasoft.Imaging.Office.UI.WebSpreadsheetEditorControlJS);
+    constructor();
 
     // METHODS
 
@@ -63,9 +61,8 @@ declare module Vintasoft.Imaging.Office.UI.Dialogs {
 
     /**
      * Initializes a new instance of the [see= "WebUiFindTextDialogJS"] class.
-     * @param spreadsheetEditorControl The spreadsheet editor control.
      */
-    constructor(spreadsheetEditorControl: Vintasoft.Imaging.Office.UI.WebSpreadsheetEditorControlJS);
+    constructor();
 
     // METHODS
 
@@ -85,9 +82,8 @@ declare module Vintasoft.Imaging.Office.UI.Dialogs {
 
     /**
      * Initializes a new instance of the [see= "WebUiSelectFunctionDialogJS"] class.
-     * @param spreadsheetEditorControl The spreadsheet editor control.
      */
-    constructor(spreadsheetEditorControl: Vintasoft.Imaging.Office.UI.WebSpreadsheetEditorControlJS);
+    constructor();
 
     // METHODS
 
@@ -107,9 +103,8 @@ declare module Vintasoft.Imaging.Office.UI.Dialogs {
 
     /**
      * Initializes a new instance of the [see= "WebUiInsertCommentDialogJS"] class.
-     * @param spreadsheetEditorControl The spreadsheet editor control.
      */
-    constructor(spreadsheetEditorControl: Vintasoft.Imaging.Office.UI.WebSpreadsheetEditorControlJS);
+    constructor();
 
     // METHODS
 
@@ -134,9 +129,8 @@ declare module Vintasoft.Imaging.Office.UI.Dialogs {
 
     /**
      * Initializes a new instance of the [see= "WebUiEditCommentDialogJS"] class.
-     * @param spreadsheetEditorControl The spreadsheet editor control.
      */
-    constructor(spreadsheetEditorControl: Vintasoft.Imaging.Office.UI.WebSpreadsheetEditorControlJS);
+    constructor();
 
     // METHODS
 
@@ -161,9 +155,8 @@ declare module Vintasoft.Imaging.Office.UI.Dialogs {
 
     /**
      * Initializes a new instance of the [see= "WebUiCellNumberFormatDialogJS"] class.
-     * @param spreadsheetEditorControl The spreadsheet editor control.
      */
-    constructor(spreadsheetEditorControl: Vintasoft.Imaging.Office.UI.WebSpreadsheetEditorControlJS);
+    constructor();
 
     // METHODS
 
@@ -183,10 +176,9 @@ declare module Vintasoft.Imaging.Office.UI.Dialogs {
 
     /**
      * Initializes a new instance of the [see= "WebUiInsertChartDialogJS"] class.
-     * @param spreadsheetEditorControl The spreadsheet editor control.
      * @param templateChartFileId The name of file that contains templates of supported charts.
      */
-    constructor(spreadsheetEditorControl: Vintasoft.Imaging.Office.UI.WebSpreadsheetEditorControlJS, templateChartFileId: string);
+    constructor(templateChartFileId: string);
 
     // METHODS
 
@@ -211,9 +203,8 @@ declare module Vintasoft.Imaging.Office.UI.Dialogs {
 
     /**
      * Initializes a new instance of the [see= "WebUiEditChartPropertiesDialogJS"] class.
-     * @param spreadsheetEditorControl The spreadsheet editor control.
      */
-    constructor(spreadsheetEditorControl: Vintasoft.Imaging.Office.UI.WebSpreadsheetEditorControlJS);
+    constructor();
 
     // METHODS
 
@@ -233,9 +224,8 @@ declare module Vintasoft.Imaging.Office.UI.Dialogs {
 
     /**
      * Initializes a new instance of the [see= "WebUiEditHyperlinkDialogJS"] class.
-     * @param spreadsheetEditorControl The spreadsheet editor control.
      */
-    constructor(spreadsheetEditorControl: Vintasoft.Imaging.Office.UI.WebSpreadsheetEditorControlJS);
+    constructor();
 
     // METHODS
 
@@ -255,9 +245,8 @@ declare module Vintasoft.Imaging.Office.UI.Dialogs {
 
     /**
      * Initializes a new instance of the [see= "WebUiSelectDefinedNameDialogJS"] class.
-     * @param spreadsheetEditorControl The spreadsheet editor control.
      */
-    constructor(spreadsheetEditorControl: Vintasoft.Imaging.Office.UI.WebSpreadsheetEditorControlJS);
+    constructor();
 
     // METHODS
 
@@ -277,9 +266,8 @@ declare module Vintasoft.Imaging.Office.UI.Dialogs {
 
     /**
      * Initializes a new instance of the [see= "WebUiAddDefinedNameDialogJS"] class.
-     * @param spreadsheetEditorControl The spreadsheet editor control.
      */
-    constructor(spreadsheetEditorControl: Vintasoft.Imaging.Office.UI.WebSpreadsheetEditorControlJS);
+    constructor();
 
     // METHODS
 
@@ -299,9 +287,8 @@ declare module Vintasoft.Imaging.Office.UI.Dialogs {
 
     /**
      * Initializes a new instance of the [see= "WebUiDefinedNameManagerDialogJS"] class.
-     * @param spreadsheetEditorControl The spreadsheet editor control.
      */
-    constructor(spreadsheetEditorControl: Vintasoft.Imaging.Office.UI.WebSpreadsheetEditorControlJS);
+    constructor();
 
     // METHODS
 

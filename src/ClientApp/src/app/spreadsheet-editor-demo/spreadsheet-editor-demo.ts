@@ -177,6 +177,10 @@ export class SpreadsheetEditorDemoComponent {
   */
   __onCopyFile_error(data: any) {
     alert(data.errorMessage);
+
+    if (_spreadsheetEditorDemoComponent._spreadsheetDocumentEditorControl != null) {
+      _spreadsheetEditorDemoComponent._spreadsheetDocumentEditorControl.updateUI();
+    }
   }
 
 
