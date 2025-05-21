@@ -90,6 +90,19 @@ export class SpreadsheetEditorDemoComponent {
       // change the visibility of demo header
       this.__changeDemoHeaderVisibility(window.innerHeight < 500);
 
+      // get UI-elements of the spreadsheet document editor control
+      let items = this._spreadsheetDocumentEditorControl.get_Items();
+      // get buttons, which allow to upload and open file
+      let uploadAndOpenFileButtons: Vintasoft.Imaging.UI.UIElements.WebUiUploadFileButtonJS[] = items.getItemsByRegisteredId("vssde-uploadAndOpenFileButton") as Vintasoft.Imaging.UI.UIElements.WebUiUploadFileButtonJS[];
+      // if buttons found
+      if (uploadAndOpenFileButtons != null && uploadAndOpenFileButtons.length > 0) {
+        // for each button
+        for (let i = 0; i < uploadAndOpenFileButtons.length; i++) {
+            // change file extension filter for dialog that will be opened if user clicked button
+          uploadAndOpenFileButtons[i].set_FileExtensionFilter(".xlsx, .xls, .ods");
+        }
+      }
+
       document.oncontextmenu = function () {
         // specify that context menu of web browser should not be shown
         return false;
