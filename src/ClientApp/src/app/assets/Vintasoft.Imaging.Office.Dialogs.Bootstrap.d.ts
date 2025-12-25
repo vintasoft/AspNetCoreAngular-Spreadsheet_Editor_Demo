@@ -299,5 +299,250 @@ declare module Vintasoft.Imaging.Office.UI.Dialogs {
 
   }
 
+  /**
+   * A web UI dialog (based on the Bootstrap) that allows to view and edit properties for text, which is selected in document.
+   */
+  class WebUiDocumentTextPropertiesDialogJS extends Vintasoft.Imaging.UI.Dialogs.WebUiDialogJS {
+
+    // CONTSRUCTORS
+
+    /**
+     * Initializes a new instance of the [see= "WebUiDocumentTextPropertiesDialogJS"] class.
+     */
+    constructor();
+
+    // METHODS
+
+    /**
+     * Shows the dialog.
+     */
+    show(): void;
+
+  }
+
+  /**
+   * A web UI dialog (based on the Bootstrap) that allows to view and edit properties for text, which is selected in document.
+   */
+  class WebUiDocumentParagraphPropertiesDialogJS extends Vintasoft.Imaging.UI.Dialogs.WebUiDialogJS {
+
+    // CONTSRUCTORS
+
+    /**
+     * Initializes a new instance of the [see= "WebUiDocumentParagraphPropertiesDialogJS"] class.
+     */
+    constructor();
+
+    // METHODS
+
+    /**
+     * Shows the dialog.
+     */
+    show(): void;
+
+  }
+
+  /**
+   * A web UI dialog (based on the Bootstrap) that allows to view and edit the indentation for document paragraph.
+   */
+  class WebUiDocumentParagraphIndentationSettingsDialogJS extends Vintasoft.Imaging.UI.Dialogs.WebUiDialogJS {
+
+    // CONTSRUCTORS
+
+    /**
+     * Initializes a new instance of the [see= "WebUiDocumentParagraphIndentationSettingsDialogJS"] class.
+     */
+    constructor();
+
+    // METHODS
+
+    /**
+     * Shows the dialog.
+     * @param paragraphProperties The document paragraph properties.
+     */
+    show(paragraphProperties: Vintasoft.Imaging.Office.UI.WebDocumentParagraphPropertiesJS): void;
+
+    /**
+     * Applies the UI settings to the settings of web document editor.
+     * @param paragraphProperties The document paragraph properties.
+     */
+    applyUI(paragraphProperties: Vintasoft.Imaging.Office.UI.WebDocumentParagraphPropertiesJS): void;
+
+  }
+
+  /**
+   * A web UI dialog (based on the Bootstrap) that allows to view and edit the line spacing for document paragraph.
+   */
+  class WebUiDocumentParagraphLineSpacingSettingsDialogJS extends Vintasoft.Imaging.UI.Dialogs.WebUiDialogJS {
+
+    // CONTSRUCTORS
+
+    /**
+     * Initializes a new instance of the [see= "WebUiDocumentParagraphLineSpacingSettingsDialogJS"] class.
+     */
+    constructor();
+
+    // METHODS
+
+    /**
+     * Shows the dialog.
+     * @param paragraphProperties The document paragraph properties.
+     */
+    show(paragraphProperties: Vintasoft.Imaging.Office.UI.WebDocumentParagraphPropertiesJS): void;
+
+    /**
+     * Applies the UI settings to the settings of web document editor.
+     * @param paragraphProperties The document paragraph properties.
+     */
+    applyUI(paragraphProperties: Vintasoft.Imaging.Office.UI.WebDocumentParagraphPropertiesJS): void;
+
+  }
+
+  /**
+   * A web UI dialog (based on the Bootstrap) that allows to view and edit the pagination settings for document paragraph.
+   */
+  class WebUiDocumentParagraphPaginationSettingsDialogJS extends Vintasoft.Imaging.UI.Dialogs.WebUiDialogJS {
+
+    // CONTSRUCTORS
+
+    /**
+     * Initializes a new instance of the [see= "WebUiDocumentParagraphPaginationSettingsDialogJS"] class.
+     */
+    constructor();
+
+    // METHODS
+
+    /**
+     * Shows the dialog.
+     * @param paragraphProperties The document paragraph properties.
+     */
+    show(paragraphProperties: Vintasoft.Imaging.Office.UI.WebDocumentParagraphPropertiesJS): void;
+
+    /**
+     * Applies the UI settings to the settings of web document editor.
+     * @param paragraphProperties The document paragraph properties.
+     */
+    applyUI(paragraphProperties: Vintasoft.Imaging.Office.UI.WebDocumentParagraphPropertiesJS): void;
+
+  }
+
+  /**
+   * A web UI dialog (based on the Bootstrap) that allows to view and edit information about document.
+   */
+  class WebUiDocumentInfoDialogJS extends Vintasoft.Imaging.UI.Dialogs.WebUiDialogJS {
+
+    // CONTSRUCTORS
+
+    /**
+     * Initializes a new instance of the [see= "WebUiDocumentInfoDialogJS"] class.
+     */
+    constructor();
+
+    // METHODS
+
+    /**
+     * Shows the dialog.
+     */
+    show(): void;
+
+  }
+
+  /**
+   * A web UI dialog (based on the Bootstrap) that allows to view and edit settings of document editor.
+   */
+  class WebUiDocumentEditorSettingsDialogJS extends Vintasoft.Imaging.UI.Dialogs.WebUiDialogJS {
+
+    // CONTSRUCTORS
+
+    /**
+     * Initializes a new instance of the [see= "WebUiDocumentEditorSettingsDialogJS"] class.
+     */
+    constructor();
+
+    // METHODS
+
+    /**
+     * Shows the dialog.
+     */
+    show(): void;
+
+  }
+
+  /**
+   * A web UI dialog (based on the Bootstrap) that allows to view and change the page view settings of document editor.
+   */
+  class WebUiDocumentEditorViewSettingsDialogJS extends Vintasoft.Imaging.UI.Dialogs.WebUiDialogJS {
+
+    // CONTSRUCTORS
+
+    /**
+     * Initializes a new instance of the [see= "WebUiDocumentEditorViewSettingsDialogJS"] class.
+     */
+    constructor();
+
+    // METHODS
+
+    /**
+     * Shows the dialog.
+     */
+    show(): void;
+
+  }
+
+  /**
+   * A web UI dialog (based on the Bootstrap) that allows to view and edit settings of document page.
+   */
+  class WebUiDocumentPageSettingsDialogJS extends Vintasoft.Imaging.UI.Dialogs.WebUiDialogJS {
+
+    // CONTSRUCTORS
+
+    /**
+     * Initializes a new instance of the [see= "WebUiDocumentPageSettingsDialogJS"] class.
+     */
+    constructor();
+
+    // METHODS
+
+    /**
+     * Shows the dialog.
+     */
+    show(): void;
+
+  }
+
+  /**
+   * A web UI dialog (based on the Bootstrap) that allows to view and edit the columns settings of document page.
+   */
+  class WebUiDocumentPageColumnsSettingsDialogJS extends Vintasoft.Imaging.UI.Dialogs.WebUiDialogJS {
+
+    // CONTSRUCTORS
+
+    /**
+     * Initializes a new instance of the [see= "WebUiDocumentPageColumnsSettingsDialogJS"] class.
+     */
+    constructor();
+
+    // METHODS
+
+    /**
+     * Shows the dialog.
+     */
+    show(): void;
+
+  }
+
+  /**
+   * A web UI dialog (based on the Bootstrap) that allows to print pages of DOCX document, which is shown in web document editor.
+   */
+  class WebUiPrintDocxDocumentSettingsDialogJS extends Vintasoft.Imaging.UI.Dialogs.WebUiDialogJS {
+
+    // CONTSRUCTORS
+
+    /**
+     * Initializes a new instance of the [see= "WebUiPrintDocxDocumentSettingsDialogJS"] class.
+     */
+    constructor();
+
+  }
+
 }
 

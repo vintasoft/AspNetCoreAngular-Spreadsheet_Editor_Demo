@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Hosting;
-using Vintasoft.Imaging.Office.AspNetCore.ApiControllers;
+﻿using Vintasoft.Imaging.Office.AspNetCore.ApiControllers;
 
 namespace AspNetCoreAngularSpreadsheetEditorDemo.Controllers
 {
