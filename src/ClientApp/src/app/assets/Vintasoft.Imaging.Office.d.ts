@@ -90,6 +90,15 @@ declare module Vintasoft.Imaging.Office.UI {
   }
 
   /**
+   * Specifies available interaction modes for web document editor.
+   */
+  class WebDocumentEditorInteractionModeEnumJS extends Vintasoft.Shared.WebEnumItemBaseJS {
+
+    constructor(value: string);
+
+  }
+
+  /**
    * Specifies available modes, which define how user can interact in the spreadsheet visual editor.
    */
   class WebSpreadsheetVisualEditorInteractionModeEnumJS extends Vintasoft.Shared.WebEnumItemBaseJS {
@@ -1561,6 +1570,17 @@ declare module Vintasoft.Imaging.Office.UI {
     set_IsEnabled(value: boolean): void;
 
     /**
+     * Gets an interaction mode for web document editor.
+     */
+    get_InteractionMode(): Vintasoft.Imaging.Office.UI.WebDocumentEditorInteractionModeEnumJS;
+
+    /**
+     * Sets an interaction mode for web document editor.
+     * @param value An interaction mode for web document editor. Default value is "Edit".
+     */
+    set_InteractionMode(value: Vintasoft.Imaging.Office.UI.WebDocumentEditorInteractionModeEnumJS): void;
+
+    /**
      * Gets a value indicating whether the control has touch screen.
      */
     get_HasTouchScreen(): boolean;
@@ -1958,6 +1978,17 @@ declare module Vintasoft.Imaging.Office.UI {
      * @param value Value indicating whether the control is enabled.
      */
     set_IsEnabled(value: boolean): void;
+
+    /**
+     * Gets an interaction mode for web document editor.
+     */
+    get_InteractionMode(): Vintasoft.Imaging.Office.UI.WebDocumentEditorInteractionModeEnumJS;
+
+    /**
+     * Sets an interaction mode for web document editor.
+     * @param value An interaction mode for web document editor. Default value is "Edit".
+     */
+    set_InteractionMode(value: Vintasoft.Imaging.Office.UI.WebDocumentEditorInteractionModeEnumJS): void;
 
     /**
      * Gets a value indicating whether the control has touch screen.
