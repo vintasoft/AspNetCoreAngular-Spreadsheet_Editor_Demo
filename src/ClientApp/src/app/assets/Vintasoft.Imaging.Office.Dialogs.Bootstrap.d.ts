@@ -362,6 +362,11 @@ declare module Vintasoft.Imaging.Office.UI.Dialogs {
     show(paragraphProperties: Vintasoft.Imaging.Office.UI.WebDocumentParagraphPropertiesJS): void;
 
     /**
+     * Shows the dialog.
+     */
+    show(): void;
+
+    /**
      * Applies the UI settings to the settings of web document editor.
      * @param paragraphProperties The document paragraph properties.
      */
@@ -390,6 +395,11 @@ declare module Vintasoft.Imaging.Office.UI.Dialogs {
     show(paragraphProperties: Vintasoft.Imaging.Office.UI.WebDocumentParagraphPropertiesJS): void;
 
     /**
+     * Shows the dialog.
+     */
+    show(): void;
+
+    /**
      * Applies the UI settings to the settings of web document editor.
      * @param paragraphProperties The document paragraph properties.
      */
@@ -416,6 +426,11 @@ declare module Vintasoft.Imaging.Office.UI.Dialogs {
      * @param paragraphProperties The document paragraph properties.
      */
     show(paragraphProperties: Vintasoft.Imaging.Office.UI.WebDocumentParagraphPropertiesJS): void;
+
+    /**
+     * Shows the dialog.
+     */
+    show(): void;
 
     /**
      * Applies the UI settings to the settings of web document editor.
