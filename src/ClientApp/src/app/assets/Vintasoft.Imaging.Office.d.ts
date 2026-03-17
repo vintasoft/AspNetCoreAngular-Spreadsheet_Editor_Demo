@@ -1991,6 +1991,22 @@ declare module Vintasoft.Imaging.Office.UI {
     set_InteractionMode(value: Vintasoft.Imaging.Office.UI.WebDocumentEditorInteractionModeEnumJS): void;
 
     /**
+     * Gets the localization identifier of UI element.
+     */
+    get_LocalizationId(): string;
+
+    /**
+     * Gets the maximum size, in bytes, of image that can be inserted into document.
+     */
+    get_MaxImageSize(): number;
+
+    /**
+     * Sets the maximum size, in bytes, of image that can be inserted into document.
+     * @param value The maximum size, in bytes, of image. The default value is 4Mb.
+     */
+    set_MaxImageSize(value: number): void;
+
+    /**
      * Gets a value indicating whether the control has touch screen.
      */
     get_HasTouchScreen(): boolean;
